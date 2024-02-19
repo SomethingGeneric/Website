@@ -6,7 +6,7 @@ jobs:
   testforpush:
     runs-on: docker
     container:
-        image: node:18.19.1-buster-slim
+        image: node:20.11.1-buster-slim
     steps:
       - run: apt update && apt install make git -y
       - uses: actions/checkout@v4
